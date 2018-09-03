@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+  color: black;
+  font-family: "Open Sans", serif;
+  background: linear-gradient(to right, white, lightgray);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container { width: 90vw; }
+
+.title-container {
+  padding: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.title-container__title {
+  font-size: 45px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-family: 'Roboto Slab', serif;
+}
+
+.title-container__subtitle {
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: 'Merriweather', serif;
+}
+
+.form-container__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn { font-size: 15px; }
+
+input[type="text"] {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.weather__info { font-size: 20px; }
+
+.weather__error {
+  color: red;
+  letter-spacing: 1px;
+}
+
+.forecast__container{
+  display: flex;
+  justify-content: center;
+}
+
+.weather__forecast {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+hr { margin: 0; }
