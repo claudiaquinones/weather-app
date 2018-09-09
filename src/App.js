@@ -35,7 +35,7 @@ class App extends React.Component {
 
       for(let i = 0; i < forecastData.list.length; i++){
         if(regex.test(forecastData.list[i]['dt_txt'])){
-          let icon_url = `http://openweathermap.org/img/w/${forecastData.list[i].weather[0].icon}.png`;
+          let icon_url = `https://openweathermap.org/img/w/${forecastData.list[i].weather[0].icon}.png`;
           fiveDayArray.push({
             date: forecastData.list[i]['dt_txt'].match(/\d\d-\d\d /),
             icon_path: icon_url,
@@ -47,7 +47,7 @@ class App extends React.Component {
 
       const LAT = currentData.coord.lat;
       const LON = currentData.coord.lon;
-      const mapQuestCall = await fetch(`http://www.mapquestapi.com/geocoding/v1/reverse?key=${MAPQUEST_KEY}&location=${LAT},${LON}`);
+      const mapQuestCall = await fetch(`https://www.mapquestapi.com/geocoding/v1/reverse?key=${MAPQUEST_KEY}&location=${LAT},${LON}`);
       const geoData = await mapQuestCall.json();
 
       this.setState({
