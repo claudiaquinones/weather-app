@@ -25,7 +25,7 @@ const Weather = (props) => (
           props.forecast.map((v,i) => <div className="col-xs-12 col-sm-12 col-md-10 col-lg-1 col-xl-2 weather__forecast" key={i}>
           {v.date[0]}<br/>
           <img id="frame" alt="icon" src={v.icon_path}/><br/>
-          {v.avg_temp}&#8457;<br/>
+          Average of {v.avg_temp}&#8457;<br/>
           {v.description}<br/>
           <hr/>
           </div>)
